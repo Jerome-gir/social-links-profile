@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <main className="bg-grey900 min-h-screen flex items-center justify-center">
-      <div className="w-[400px] h-[600px] bg-grey800 rounded-xl p-10">
+      <div className="w-[350px] sm:w-[400px] h-[590px] sm:h-[610px] bg-grey800 rounded-xl p-10">
         <div className="flex items-center flex-col">
           <Image
             className="rounded-full mb-6"
@@ -46,14 +46,14 @@ export default function Home() {
           <p className="text-green font-interBold text-sm tracking-wide mb-6">
             London, United Kingdom
           </p>
-          <p className="text-white font-inter mb-6">
+          <p className="text-sm sm:text-base text-white font-inter mb-6">
             &quot;Front-end developer and avid reader.&quot;
           </p>
           <ul className=" flex flex-col gap-4 cursor-pointer">
             {socialLinks.map((link, index) => (
               <li
                 key={index}
-                className="w-80 h-11 rounded-lg bg-grey700 text-white flex items-center justify-center font-interBold hover:bg-green hover:text-grey900"
+                className=" w-72 sm:w-80 h-11 rounded-lg bg-grey700 text-sm sm:text-base text-white flex items-center justify-center font-interSemiBold sm:font-interBold sm:hover:bg-green sm:hover:text-grey900"
               >
                 {link.link ? (
                   <Link href={link.link}>{link.name}</Link>
